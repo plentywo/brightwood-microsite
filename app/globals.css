@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair:wght@700&family=Poppins:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-montserrat;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --text-base-font-medium-font-family: "Inter", Helvetica;
+    --text-base-font-medium-font-size: 16px;
+    --text-base-font-medium-font-style: normal;
+    --text-base-font-medium-font-weight: 500;
+    --text-base-font-medium-letter-spacing: 0px;
+    --text-base-font-medium-line-height: 150%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  .header-bg-overlay{
+    /* Mobile-first: More prominent overlay for better text readability */
+    background: linear-gradient(39deg, rgba(27, 27, 27, 0.92) 60%, rgba(0, 0, 0, 0.4) 100%);
+  }
+  
+  /* Less prominent overlay on larger screens */
+  @media (min-width: 640px) {
+    .header-bg-overlay{
+      background: linear-gradient(39deg, rgba(27, 27, 27, 0.85) 50%, rgba(0, 0, 0, 0.15) 85%);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .header-bg-overlay{
+      background: linear-gradient(39deg, rgba(27, 27, 27, 0.82) 46.62%, rgba(0, 0, 0, 0.00) 82.84%);
+    }
+  }
+  .font-text-base-font-medium {
+    font-family: var(--text-base-font-medium-font-family);
+    font-size: var(--text-base-font-medium-font-size);
+    font-style: var(--text-base-font-medium-font-style);
+    font-weight: var(--text-base-font-medium-font-weight);
+    letter-spacing: var(--text-base-font-medium-letter-spacing);
+    line-height: var(--text-base-font-medium-line-height);
+  }
+  .shadow-shadow-xs {
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Custom object-position utilities for better mobile image control */
+  .object-center-top {
+    object-position: center top;
+  }
+  .object-center-bottom {
+    object-position: center bottom;
+  }
+  .object-left-center {
+    object-position: left center;
+  }
+  .object-right-center {
+    object-position: right center;
+  }
+  .object-left-top {
+    object-position: left top;
+  }
+  .object-right-top {
+    object-position: right top;
+  }
+  .object-center-25 {
+    object-position: center 25%;
+  }
+  .object-center-75 {
+    object-position: center 75%;
+  }
+} 
