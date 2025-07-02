@@ -56,7 +56,7 @@ export const TargetAudienceSection = (): JSX.Element => {
               spaceBetween={32}
               slidesPerView={1}
               className="w-full"
-              autoplay={{ delay: 1500, disableOnInteraction: false }}
+              autoplay={{ delay: 1500, disableOnInteraction: false, pauseOnMouseEnter: true }}
               loop={true}
             >
               {testimonials.map((testimonial, idx) => (
