@@ -13,21 +13,27 @@ export const TargetAudienceSection = (): JSX.Element => {
   // Testimonial data that can be expanded for a carousel
   const testimonials = [
     {
-      quote:`"These past few months have been really tough on the family, with some pretty big unexpected changes. Brightwood has been there, thinking through every detail, and guiding the way for my Dad from coordinating medical appointments to making sure he's eating well and getting out of the house and enjoying the outdoors. I used to be up at night worrying about him and feeling guilty. Now I feel confident that he's happy and loving his independence."`,
-      name: "Ahmad Vetrovs",
-      location: "Paradise Valley",
+      quote: `"Kristen has been a God-send. She feels just like a part of the family and her energy has transformed my outlook. We start every morning with breakfast and coffee, share a highlight of the previous day, and a goal for the day. Every day feels like an adventure."`,
+      name: "Joan M.",
+      location: "Phoenix",
       active: true,
     },
     {
-      quote:`"These past few months have been really tough on the family, with some pretty big unexpected changes. Brightwood has been there, thinking through every detail, and guiding the way for my Dad from coordinating medical appointments to making sure he's eating well and getting out of the house and enjoying the outdoors. I used to be up at night worrying about him and feeling guilty. Now I feel confident that he's happy and loving his independence."`,
-      name: "Angel Press",
-      location: "Fountain Hills",
-      active: true,
-    },
-    {
-      quote:`"These past few months have been really tough on the family, with some pretty big unexpected changes. Brightwood has been there, thinking through every detail, and guiding the way for my Dad from coordinating medical appointments to making sure he's eating well and getting out of the house and enjoying the outdoors. I used to be up at night worrying about him and feeling guilty. Now I feel confident that he's happy and loving his independence."`,
-      name: "Skylar Siphron",
+      quote: `"These past few months have been really tough on the family, with some pretty big unexpected changes. Brightwood has been there, thinking through every detail, and guiding the way for my Dad from coordinating medical appointments to making sure he's eating well and getting out of the house and enjoying the outdoors. I used to be up at night worrying about him and feeling guilty. Now I feel confident that he's happy and loving his independence."`,
+      name: "Michael B.",
       location: "Scottsdale",
+      active: true,
+    },
+    {
+      quote: `"My wife and I have been lucky to have lived a life full of travel and experiences. We're not able to hop on a plane like we used to, but every week is an experience with Cindy and Brightwood. Symphonies, museums, and talks at ASU - Brightwood makes it happen and it feels great to still be a part of the local scene."`,
+      name: "Greg H.",
+      location: "Scottsdale",
+      active: true,
+    },
+    {
+      quote: `"My Dad had a stroke and went to the hospital at 10pm, and my Mom couldn't be alone. Brightwood's team sprang into action and had a CarePro there within the hour and had amazing people there to stay with my Mom 24/7 for the next week until my Dad got home and then helped amazingly through Dad's recovery. I can't explain how much relief it was for our family to be able to know and trust that Mom was safe and cared for while we were focused on Dad's health."`,
+      name: "Scott B.",
+      location: "Paradise Valley",
       active: true,
     },
   ];
